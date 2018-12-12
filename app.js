@@ -1,5 +1,41 @@
 // OutPut
 
+ // CONDITIONAL STATEMENTS
+
+ var a = prompt("please enter first number","number 1");
+ var b = prompt("Please enter second number","number 2");
+ 
+ var num1 = parseInt(a);
+ var num2 = parseInt(b);
+ var typeNum1 =  typeof(num1);
+ var typeNum2 = typeof(num2);
+ var type = "number";
+ var flag = confirm("Are you sure you enter the valid number?");
+ 
+ if(flag == true){
+     if(typeNum1 == type && typeNum2 == type && typeNum1!="" && typeNum2 !=""){
+     var sum = num1 + num2;
+     alert(`The addition of ${num1} and ${num2} is ` +sum);
+ 
+     var multiply = num1 * num2;
+     alert(`The multipilication of ${num1} and ${num2} is `+multiply);
+ 
+     var divide = num1 / num2;
+     alert(`The division of ${num1} and ${num2} is `+divide);
+ 
+     var subtraction = num1 - num2;
+     alert(`The subtraction of ${num1} and ${num2} is `+subtraction);
+     }else{
+         alert("sorry you enter an invalid characters, Please try again");
+     }
+ }else{
+     alert("Sorry , you cancelled  the calculation. ");
+ }
+ 
+
+
+
+// type conversion
 //  "" + 1 + 0
 
 var num1 = "" + 1 + 0;
@@ -184,37 +220,5 @@ var a = 0;
 var a = 1;
  console.log( null == a); // false
 
-
- // CONDITIONAL STATEMENTS
-
-var a = prompt("please enter first number","number 1");
-var b = prompt("Please enter second number","number 2");
-
-var num1 = parseInt(a);
-var num2 = parseInt(b);
-var typeNum1 =  typeof(num1);
-var typeNum2 = typeof(num2);
-var type = "number";
-var flag = confirm("Are you sure you enter the valid number?");
-
-if(flag == true){
-    if(typeNum1 == type && typeNum2 == type && typeNum1!="" && typeNum2 !=""){
-    var sum = num1 + num2;
-    alert(`The submission of ${num1} and ${num2} is ` +sum);
-
-    var multiply = num1 * num2;
-    alert(`The multipilication of ${num1} and ${num2} is `+multiply);
-
-    var divide = num1 / num2;
-    alert(`The division of ${num1} and ${num2} is `+divide);
-
-    var subtraction = num1 - num2;
-    alert(`The subtraction of ${num1} and ${num2} is `+subtraction);
-    }else{
-        alert("sorry you enter an invalid characters, Please try again");
-    }
-}else{
-    alert("Sorry , you cancelled  the calculation. ");
-}
 
 
